@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Thierry NDAYISHEMEZE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="header-left">
+            <span class="name">NDAYISHEMEZE <a class = "thierry">Thierry</a></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="accueil">
+        <div class="accueil-content">
+            <div class="accueil-text">
+                <h1>Je suis <a class = "thierry">Thierry</a>, Développeur en devenir<br>Passionné par le web et le design.</h1>
+                <a href="#projets" class="btn">Voir mes projets</a>
+            </div>
+            <div class="accueil-image">
+                <img src="description.jpg" alt="Code HTML, CSS et JS" class="code-image">
+                <div class="code-tooltip">HTML, CSS & JavaScript</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="apropos">
+        <h2>À propos</h2>
+        <div class="apropos-content">
+            <div class="apropos-text">
+                <p>Je m'appelle <a class = thierry>Thierry</a>, passionné par la <br> création des sites web modernes et interactifs. <br> <br>Je suis actuellement étudiant en <span class="highlight">développement web</span>, <br>et je cherche à améliorer mes connaissances en JavaScript, HTML et CSS.<br> <br>J'adore transformer mes idées en projets concrets<br> et expérimenter les nouvelles technologies.</p>
+                <a href="#" class="btn" id="download-cv">Télécharger mon CV</a>
+            </div>
+            <div class="apropos-image">
+                <img src="profil.png" alt="Photo de profil" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projets">
+        <h2>Mes projets</h2>
+        <div class="projets-grid">
+            <div class="projet-card">
+                <div class="projet-image" id="projet1"></div>
+                <h3>Jeu de Mémoire</h3>
+                <p>Un jeu de mémoire interactif avec des cartes à retourner.</p>
+                <a href="#" class="btn">Voir</a>
+            </div>
+            <div class="projet-card">
+                <div class="projet-image" id="projet2"></div>
+                <h3>Calculatrice</h3>
+                <p>Une calculatrice fonctionnelle avec interface moderne.</p>
+                <a href="#" class="btn">Voir</a>
+            </div>
+            <div class="projet-card">
+                <div class="projet-image" id="projet3"></div>
+                <h3>To-Do List</h3>
+                <p>Application pour gérer vos tâches quotidiennes.</p>
+                <a href="#" class="btn">Voir</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="competences">
+        <h2>Mes Compétences</h2>
+        <div class="competences-grid">
+            <div class="competence-card">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>
+                        <span>Gestion des projets</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 87%;"></div>
+                        </div>
+                        <span>87%</span>
+                    </li>
+                    <li>
+                        <span>Résolution des problèmes</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                        <span>60%</span>
+                    </li>
+                    <li>
+                        <span>Adaptabilité</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                        <span>80%</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="competence-card">
+                <h3>Hard Skills</h3>
+                <ul>
+                    <li>
+                        <span>HTML</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                        <span>95%</span>
+                    </li>
+                    <li>
+                        <span>CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                        <span>70%</span>
+                    </li>
+                    <li>
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 89%;"></div>
+                        </div>
+                        <span>89%</span>
+                    </li>
+                    <li>
+                        <span>VS Code</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 97%;"></div>
+                        </div>
+                        <span>97%</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <h2>Vous avez <span>un projet en tête?</span><br>N'hésitez pas à me <span>contacter</span></h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="sujet">Votre sujet</label>
+                <input type="text" id="sujet" name="sujet" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn submit-btn">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-content">
+            <p>Designed by Thierry, with HTML CSS JS</p>
+            <p>Tous droits réservés - @2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
